@@ -2,6 +2,7 @@ const express = require('express')
 const app = express();
 const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
+app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({extended: true})) 
 
